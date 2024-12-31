@@ -16,6 +16,6 @@ mamba activate opt;
 export PYTHONPATH="${PYTHONPATH}:/"
 export WANDB_API_KEY=
 
-python gradient_norms.py
+python gradient_norms.py --config=configs/gn_config.yaml
 
 mamba deactivate

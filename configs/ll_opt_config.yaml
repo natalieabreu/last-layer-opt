@@ -1,0 +1,14 @@
+LR: 0.01
+LAST_LAYER_LR: 0.001
+INNER_OPT_LR: 0.004
+WARMUP: [50]
+
+DATASET: cifar5m
+BATCH_SIZE: 50_000
+STEPS: 200
+INNER_STEPS: 1000
+NORM: ["BATCH_NORM"]
+OPT: ["NONE",  "BIAS", "LAST_LAYER"]
+
+wandb_project: 'last-layer-opt'
+notes: "last layer opt"
